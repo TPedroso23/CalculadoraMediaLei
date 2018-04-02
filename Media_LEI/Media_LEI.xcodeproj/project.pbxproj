@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		07E97E1C4ACCE2E86F3E334A /* Pods_Media_LEI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E174DB9C4AB51500B869B6 /* Pods_Media_LEI.framework */; };
 		8032C84B2072A13700B26789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C84A2072A13700B26789 /* AppDelegate.swift */; };
-		8032C84D2072A13700B26789 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C84C2072A13700B26789 /* ViewController.swift */; };
 		8032C8502072A13700B26789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032C84E2072A13700B26789 /* Main.storyboard */; };
 		8032C8522072A13800B26789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8032C8512072A13800B26789 /* Assets.xcassets */; };
 		8032C8552072A13800B26789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032C8532072A13800B26789 /* LaunchScreen.storyboard */; };
+		8032C85D2072A22500B26789 /* UnidadeCurricular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C85C2072A22500B26789 /* UnidadeCurricular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13E174DB9C4AB51500B869B6 /* Pods_Media_LEI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Media_LEI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032C8472072A13700B26789 /* Media_LEI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Media_LEI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8032C84A2072A13700B26789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8032C84C2072A13700B26789 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8032C84F2072A13700B26789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8032C8512072A13800B26789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8032C8542072A13800B26789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8032C8562072A13800B26789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8032C85C2072A22500B26789 /* UnidadeCurricular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidadeCurricular.swift; sourceTree = "<group>"; };
 		D377B2BF3385FA0777FF2633 /* Pods-Media_LEI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_LEI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI.debug.xcconfig"; sourceTree = "<group>"; };
 		DB65358CC16383349DB3CAD3 /* Pods-Media_LEI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_LEI.release.xcconfig"; path = "Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,11 +70,11 @@
 			isa = PBXGroup;
 			children = (
 				8032C84A2072A13700B26789 /* AppDelegate.swift */,
-				8032C84C2072A13700B26789 /* ViewController.swift */,
 				8032C84E2072A13700B26789 /* Main.storyboard */,
 				8032C8512072A13800B26789 /* Assets.xcassets */,
 				8032C8532072A13800B26789 /* LaunchScreen.storyboard */,
 				8032C8562072A13800B26789 /* Info.plist */,
+				8032C85C2072A22500B26789 /* UnidadeCurricular.swift */,
 			);
 			path = Media_LEI;
 			sourceTree = "<group>";
@@ -213,8 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8032C84D2072A13700B26789 /* ViewController.swift in Sources */,
 				8032C84B2072A13700B26789 /* AppDelegate.swift in Sources */,
+				8032C85D2072A22500B26789 /* UnidadeCurricular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +363,10 @@
 				DEVELOPMENT_TEAM = XT4YN826M2;
 				INFOPLIST_FILE = Media_LEI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.tpedroso.Media-LEI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -380,7 +383,10 @@
 				DEVELOPMENT_TEAM = XT4YN826M2;
 				INFOPLIST_FILE = Media_LEI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.tpedroso.Media-LEI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
