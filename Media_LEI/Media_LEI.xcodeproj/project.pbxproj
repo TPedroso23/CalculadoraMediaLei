@@ -15,6 +15,9 @@
 		8032C85D2072A22500B26789 /* UnidadeCurricular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C85C2072A22500B26789 /* UnidadeCurricular.swift */; };
 		8032C85F2072F4AF00B26789 /* LEI.json in Resources */ = {isa = PBXBuildFile; fileRef = 8032C85E2072F4AF00B26789 /* LEI.json */; };
 		8032C8612072F71500B26789 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C8602072F71500B26789 /* MenuViewController.swift */; };
+		80909F362073FA93005DDFB3 /* CalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80909F352073FA93005DDFB3 /* CalculatorTableViewController.swift */; };
+		80909F382073FF5B005DDFB3 /* CadeirasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80909F372073FF5B005DDFB3 /* CadeirasTableViewCell.swift */; };
+		80909F3A20740E20005DDFB3 /* CalcularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80909F3920740E20005DDFB3 /* CalcularTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		8032C85C2072A22500B26789 /* UnidadeCurricular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidadeCurricular.swift; sourceTree = "<group>"; };
 		8032C85E2072F4AF00B26789 /* LEI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LEI.json; path = ../../../LEI.json; sourceTree = "<group>"; };
 		8032C8602072F71500B26789 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		80909F352073FA93005DDFB3 /* CalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTableViewController.swift; sourceTree = "<group>"; };
+		80909F372073FF5B005DDFB3 /* CadeirasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadeirasTableViewCell.swift; sourceTree = "<group>"; };
+		80909F3920740E20005DDFB3 /* CalcularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcularTableViewCell.swift; sourceTree = "<group>"; };
 		D377B2BF3385FA0777FF2633 /* Pods-Media_LEI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_LEI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI.debug.xcconfig"; sourceTree = "<group>"; };
 		DB65358CC16383349DB3CAD3 /* Pods-Media_LEI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_LEI.release.xcconfig"; path = "Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +87,9 @@
 				8032C8562072A13800B26789 /* Info.plist */,
 				8032C85C2072A22500B26789 /* UnidadeCurricular.swift */,
 				8032C8602072F71500B26789 /* MenuViewController.swift */,
+				80909F352073FA93005DDFB3 /* CalculatorTableViewController.swift */,
+				80909F372073FF5B005DDFB3 /* CadeirasTableViewCell.swift */,
+				80909F3920740E20005DDFB3 /* CalcularTableViewCell.swift */,
 			);
 			path = Media_LEI;
 			sourceTree = "<group>";
@@ -225,7 +234,10 @@
 			files = (
 				8032C84B2072A13700B26789 /* AppDelegate.swift in Sources */,
 				8032C8612072F71500B26789 /* MenuViewController.swift in Sources */,
+				80909F3A20740E20005DDFB3 /* CalcularTableViewCell.swift in Sources */,
 				8032C85D2072A22500B26789 /* UnidadeCurricular.swift in Sources */,
+				80909F382073FF5B005DDFB3 /* CadeirasTableViewCell.swift in Sources */,
+				80909F362073FA93005DDFB3 /* CalculatorTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +386,10 @@
 				DEVELOPMENT_TEAM = XT4YN826M2;
 				INFOPLIST_FILE = Media_LEI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.tpedroso.Media-LEI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -391,7 +406,10 @@
 				DEVELOPMENT_TEAM = XT4YN826M2;
 				INFOPLIST_FILE = Media_LEI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.tpedroso.Media-LEI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
