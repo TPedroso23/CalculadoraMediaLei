@@ -13,6 +13,8 @@
 		8032C8522072A13800B26789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8032C8512072A13800B26789 /* Assets.xcassets */; };
 		8032C8552072A13800B26789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8032C8532072A13800B26789 /* LaunchScreen.storyboard */; };
 		8032C85D2072A22500B26789 /* UnidadeCurricular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C85C2072A22500B26789 /* UnidadeCurricular.swift */; };
+		8032C85F2072F4AF00B26789 /* LEI.json in Resources */ = {isa = PBXBuildFile; fileRef = 8032C85E2072F4AF00B26789 /* LEI.json */; };
+		8032C8612072F71500B26789 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8032C8602072F71500B26789 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8032C8542072A13800B26789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8032C8562072A13800B26789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8032C85C2072A22500B26789 /* UnidadeCurricular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidadeCurricular.swift; sourceTree = "<group>"; };
+		8032C85E2072F4AF00B26789 /* LEI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = LEI.json; path = ../../../LEI.json; sourceTree = "<group>"; };
+		8032C8602072F71500B26789 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D377B2BF3385FA0777FF2633 /* Pods-Media_LEI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_LEI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI.debug.xcconfig"; sourceTree = "<group>"; };
 		DB65358CC16383349DB3CAD3 /* Pods-Media_LEI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Media_LEI.release.xcconfig"; path = "Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,12 +73,14 @@
 		8032C8492072A13700B26789 /* Media_LEI */ = {
 			isa = PBXGroup;
 			children = (
+				8032C85E2072F4AF00B26789 /* LEI.json */,
 				8032C84A2072A13700B26789 /* AppDelegate.swift */,
 				8032C84E2072A13700B26789 /* Main.storyboard */,
 				8032C8512072A13800B26789 /* Assets.xcassets */,
 				8032C8532072A13800B26789 /* LaunchScreen.storyboard */,
 				8032C8562072A13800B26789 /* Info.plist */,
 				8032C85C2072A22500B26789 /* UnidadeCurricular.swift */,
+				8032C8602072F71500B26789 /* MenuViewController.swift */,
 			);
 			path = Media_LEI;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 			files = (
 				8032C8552072A13800B26789 /* LaunchScreen.storyboard in Resources */,
 				8032C8522072A13800B26789 /* Assets.xcassets in Resources */,
+				8032C85F2072F4AF00B26789 /* LEI.json in Resources */,
 				8032C8502072A13700B26789 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,9 +204,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Media_LEI/Pods-Media_LEI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8032C84B2072A13700B26789 /* AppDelegate.swift in Sources */,
+				8032C8612072F71500B26789 /* MenuViewController.swift in Sources */,
 				8032C85D2072A22500B26789 /* UnidadeCurricular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,10 +374,7 @@
 				DEVELOPMENT_TEAM = XT4YN826M2;
 				INFOPLIST_FILE = Media_LEI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.tpedroso.Media-LEI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -383,10 +391,7 @@
 				DEVELOPMENT_TEAM = XT4YN826M2;
 				INFOPLIST_FILE = Media_LEI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pt.tpedroso.Media-LEI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

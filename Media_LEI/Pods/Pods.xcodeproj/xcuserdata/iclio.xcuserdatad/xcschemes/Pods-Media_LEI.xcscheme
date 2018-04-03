@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "969DF4BAFA9B9E7F894DB99C1DB6B491"
+               BlueprintIdentifier = "58903890151723A4D14A840FC72B3B8B"
                BuildableName = "Pods_Media_LEI.framework"
                BlueprintName = "Pods-Media_LEI"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "969DF4BAFA9B9E7F894DB99C1DB6B491"
+            BlueprintIdentifier = "58903890151723A4D14A840FC72B3B8B"
             BuildableName = "Pods_Media_LEI.framework"
             BlueprintName = "Pods-Media_LEI"
             ReferencedContainer = "container:Pods.xcodeproj">

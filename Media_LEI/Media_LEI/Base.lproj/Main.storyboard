@@ -1,11 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ER5-s2-E3G">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="rWw-eS-isZ">
+            <objects>
+                <viewController id="ER5-s2-E3G" customClass="MenuViewController" customModule="Media_LEI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lm-a3-aZm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUN-tX-Gcc">
+                                <rect key="frame" x="171" y="152" width="32" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="DA">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="OnClickDA:" destination="ER5-s2-E3G" eventType="touchUpInside" id="1Yh-2A-Hxb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghA-3j-7eu">
+                                <rect key="frame" x="164.5" y="323" width="45" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="RAS">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickRAS:" destination="ER5-s2-E3G" eventType="touchUpInside" id="erp-82-Tyr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qz-II-v7P">
+                                <rect key="frame" x="172" y="494" width="30" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="SI">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSI:" destination="ER5-s2-E3G" eventType="touchUpInside" id="BTK-ph-7m9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolhe o teu Ramo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qv-8l-q4h">
+                                <rect key="frame" x="0.0" y="70" width="375" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Qv-8l-q4h" firstAttribute="top" secondItem="AcP-hM-LWq" secondAttribute="top" constant="50" id="CGb-Nr-zSB"/>
+                            <constraint firstItem="0qz-II-v7P" firstAttribute="top" secondItem="ghA-3j-7eu" secondAttribute="bottom" constant="130" id="GWu-c6-WGh"/>
+                            <constraint firstItem="AcP-hM-LWq" firstAttribute="trailing" secondItem="3Qv-8l-q4h" secondAttribute="trailing" id="Gfi-Mj-pG4"/>
+                            <constraint firstItem="ghA-3j-7eu" firstAttribute="centerX" secondItem="AcP-hM-LWq" secondAttribute="centerX" id="Nac-GJ-ONg"/>
+                            <constraint firstItem="3Qv-8l-q4h" firstAttribute="leading" secondItem="AcP-hM-LWq" secondAttribute="leading" id="QDm-Q5-J74"/>
+                            <constraint firstItem="ghA-3j-7eu" firstAttribute="top" secondItem="XUN-tX-Gcc" secondAttribute="bottom" constant="130" id="UFt-WW-RJb"/>
+                            <constraint firstItem="ghA-3j-7eu" firstAttribute="centerY" secondItem="AcP-hM-LWq" secondAttribute="centerY" id="oiu-Rp-JRZ"/>
+                            <constraint firstItem="0qz-II-v7P" firstAttribute="centerX" secondItem="AcP-hM-LWq" secondAttribute="centerX" id="sAF-wn-EpH"/>
+                            <constraint firstItem="XUN-tX-Gcc" firstAttribute="centerX" secondItem="AcP-hM-LWq" secondAttribute="centerX" id="saL-Yq-AQe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AcP-hM-LWq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrf-sb-vg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="151"/>
+        </scene>
+    </scenes>
 </document>
