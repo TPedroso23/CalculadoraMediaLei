@@ -15,6 +15,9 @@ class CadeirasTableViewCell: UITableViewCell {
     
     func configure(cadeira:UnidadeCurricular){
         self.nomeCadeira.text = cadeira.getNome()
+        if(cadeira.getNota() != 0){
+            self.notaCadeira.text = String(cadeira.getNota())
+        }
     }
     
     func getNota() -> Int{
@@ -23,10 +26,11 @@ class CadeirasTableViewCell: UITableViewCell {
         }
         return 0
     }
+  
     
-    override func prepareForReuse() {
-        self.nomeCadeira.text = ""
-        self.notaCadeira.text = ""
+   override func prepareForReuse() {
+//        self.nomeCadeira.text = ""
+//        self.notaCadeira.text = ""
     }
 
 }

@@ -107,6 +107,9 @@
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="notaChanger:" destination="Y0e-jI-Qrs" eventType="editingDidEnd" id="WB1-p2-aRP"/>
+                                            </connections>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -114,7 +117,7 @@
                                         <constraint firstItem="wPq-bU-Jhh" firstAttribute="leading" secondItem="sqY-BF-1iv" secondAttribute="leading" constant="35" id="Cra-bS-tn9"/>
                                         <constraint firstItem="0Uj-DK-bY9" firstAttribute="top" secondItem="sqY-BF-1iv" secondAttribute="top" constant="6" id="Yv3-Sr-iPl"/>
                                         <constraint firstAttribute="trailing" secondItem="0Uj-DK-bY9" secondAttribute="trailing" constant="45" id="nQQ-Pl-pRo"/>
-                                        <constraint firstItem="0Uj-DK-bY9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wPq-bU-Jhh" secondAttribute="trailing" symbolic="YES" id="vdt-GG-qVy"/>
+                                        <constraint firstItem="0Uj-DK-bY9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wPq-bU-Jhh" secondAttribute="trailing" constant="8" symbolic="YES" id="vdt-GG-qVy"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -13,15 +13,18 @@ class UnidadeCurricular{
     
     let nome:String
     let creditos:Int
+    var nota:Int
     
     init(){
         self.nome = ""
         self.creditos = 0
+        self.nota = 0
     }
     
     init(nome:String, creditos:Int){
         self.nome = nome
         self.creditos = creditos
+        self.nota = 0
     }
     
     func getNome() -> String{
@@ -32,4 +35,11 @@ class UnidadeCurricular{
         return self.creditos
     }
     
+    func getNota() -> Int{
+        return self.nota
+    }
+    
+    func setNota(nota:Int){
+        self.nota = nota
+    }
 }
